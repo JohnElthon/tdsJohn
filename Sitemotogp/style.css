@@ -1,0 +1,22 @@
+body{
+   /* background-image: url(imagens/fundo.jpg);
+    background-repeat: no-repeat; /* Imagens não se repete na tela*/
+    /*background-attachment: fixed; /*Para deixar a imagem fixa por inteira
+    background-size: cover; Quando rolar a tela, a imagem acompanha */
+}
+.titulo{
+    padding: 1px;
+    background-color: rgb(233, 109, 64);
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    height: 60px;
+            
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+.card{
+    text-align: center;
+}
