@@ -9,7 +9,7 @@
 }
 
 
-.itensordem1>img,.itensordem2>img,.itensordem3>img,.itensordem4>img,.itensordem5>img{
+.itens>img{
       /* background-repeat: no-repeat; /* Imagens não se repete na tela*/
    /* background-attachment: fixed; /*Para deixar a imagem fixa por inteira*/
    /* background-size: cover; /*Quando rolar a tela, a imagem acompanha */  
