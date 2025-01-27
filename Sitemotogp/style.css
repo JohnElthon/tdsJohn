@@ -1,9 +1,45 @@
-body{
-   /* background-image: url(imagens/fundo.jpg);
-    background-repeat: no-repeat; /* Imagens não se repete na tela*/
-    /*background-attachment: fixed; /*Para deixar a imagem fixa por inteira
-    background-size: cover; Quando rolar a tela, a imagem acompanha */
+.container{
+    margin-left: 18%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: flex-start;  
+    flex: auto;
+   
 }
+
+
+.itensordem1>img,.itensordem2>img,.itensordem3>img,.itensordem4>img,.itensordem5>img{
+      /* background-repeat: no-repeat; /* Imagens não se repete na tela*/
+   /* background-attachment: fixed; /*Para deixar a imagem fixa por inteira*/
+   /* background-size: cover; /*Quando rolar a tela, a imagem acompanha */  
+    padding: 10px;
+    margin: 10px;
+    width: 115px;
+    height: 60px;
+    border-radius: 150px;  
+}
+.imglink{
+    padding: 10px;
+    margin: 10px;
+    width: 115px;
+    height: 60px;
+    border-radius: 150px;
+}
+
+
+
+.itensordem1:hover,.itensordem2:hover,.itensordem3:hover,.itensordem4:hover,.itensordem5:hover{
+    opacity: 80%;
+}
+body{
+    background-color: rgb(115, 129, 129);
+   /* background-repeat: no-repeat;  /*Imagens não se repete na tela*/
+    /*background-attachment: fixed; /*Para deixar a imagem fixa por inteira*/
+    /*background-size: cover; /*Quando rolar a tela, a imagem acompanha*/
+}
+
+
 .titulo{
     padding: 1px;
     background-color: rgb(233, 109, 64);
@@ -15,8 +51,50 @@ body{
 }
 img{
     height: 300px;
-    width: 300px;
-}
+    width: 255px;
+    margin: 2px;
+    border-radius: 10px;
+ }
+
+
 .card{
-    text-align: center;
+margin-left: 9%;
+text-align: center;
+display: flex;
+flex: auto;
+flex-flow:  wrap;
+align-items: center;
+justify-content:center;
+max-width: 75vw;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
