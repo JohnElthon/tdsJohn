@@ -1,44 +1,15 @@
-.container{
-    margin-left: 18%;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: flex-start;  
-    flex: auto;
-   
+*{
+    margin: 0;
+    padding: 0;
 }
 
-
-.itens>img{
-      /* background-repeat: no-repeat; /* Imagens não se repete na tela*/
-   /* background-attachment: fixed; /*Para deixar a imagem fixa por inteira*/
-   /* background-size: cover; /*Quando rolar a tela, a imagem acompanha */  
-    padding: 10px;
-    margin: 10px;
-    width: 115px;
-    height: 60px;
-    border-radius: 150px;  
-}
-.imglink{
-    padding: 10px;
-    margin: 10px;
-    width: 115px;
-    height: 60px;
-    border-radius: 150px;
-}
-
-
-
-.itens:hover{
-    opacity: 80%;
-}
 body{
+
     background-color: rgb(115, 129, 129);
    /* background-repeat: no-repeat;  /*Imagens não se repete na tela*/
     /*background-attachment: fixed; /*Para deixar a imagem fixa por inteira*/
     /*background-size: cover; /*Quando rolar a tela, a imagem acompanha*/
 }
-
 
 .titulo{
     padding: 1px;
@@ -49,25 +20,67 @@ body{
     height: 60px;
             
 }
-img{
-    height: 300px;
-    width: 255px;
-    margin: 2px;
-    border-radius: 10px;
- }
 
+main{display: flex;}
+
+.containerMenu{
+    width: 15vw;
+    background-color:brown ;
+    display: flex;
+    flex-flow: column wrap; 
+    backdrop-filter: blur(10px);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.itens{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    background-color: blue;
+}
+
+.itens:hover{
+    opacity: 80%;
+}
+
+.imglink{
+    width: 115px;
+    height: 60px;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+.containerGaleria{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+    background-color: aquamarine;
+    justify-content: center;
+}
 
 .card{
-margin-left: 9%;
-text-align: center;
-display: flex;
-flex: auto;
-flex-flow:  wrap;
-align-items: center;
-justify-content:center;
-max-width: 75vw;
-   
+    margin: 10px;
+    background-color: rgb(119, 107, 107);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 300px;
+    }
+
+.imgGaleria{
+    width: 100%;
 }
+
+
+
+
+
+
 
 
 
