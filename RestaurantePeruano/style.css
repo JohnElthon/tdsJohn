@@ -1,22 +1,23 @@
 *{
-    margim: 0;
+    margin: 0;
     padding: 0;
     
 }
 .container{
-    width: 1080px;
+    width: 75vw;
     display:flex;
     flex-flow:nowrap;
     align-items:center;
-    justify-content: space-between;
-    height: 75px;
+    justify-content: center;
+    height: 80px;
      
     }
 header{
     display: flex;
     flex-flow: nowrap;
-    background-color: rgb(233,77,77);
-    width: 100%; 
+    
+    
+    width: 98%; 
     padding: 10px;
 }
 .logo{
@@ -35,16 +36,24 @@ header{
 .menu nav a{
     color: #ffffff;
     text-decoration: none;
-    padding-right: 50px;
+    padding-right: 70px;
+    
+    
+}
+nav{
+    background-color: rgb(233,77,77);   
+    text-align:center;
+    width: 120%;
+    padding: 15px;
 
 }
 .seçaoEntrada{
     background-image:url("./imagens/salao\ restaurante.png");
     background-size: cover;
     background-attachment:scroll;
-   height: 450px;
-   color: white;
-   text-align: center;
+    height: 450px;
+    color: white;
+    text-align: center;
    
    
 }
@@ -80,9 +89,10 @@ button:hover{
     flex-flow: row wrap;
     width: 100%;
     justify-content: center;
+    
 }
 .cards1{
-    margin: 0px;
+    margin: 1px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -103,7 +113,7 @@ button:hover{
 .cards2{
     
    
-    margin: 0px;
+    margin: 1px;
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
@@ -116,6 +126,31 @@ button:hover{
 .cards1:hover{
     
 }
+
+.secaofinal{
+   
+    margin-top: 30px;  
+    
+    display: flex;
+    flex-flow: row wrap;  
+    color: #ffffff;
+    background-color:rgb(233,77,77);
+    
+    text-align:right;
+    
+    
+}
+.secaofinal img{
+    width: 100%;
+    
+}
+.chefs{
+    margin: 10px;
+    max-width: 300px;
+    
+
+}
+
 
 
 
