@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GetElementsby</title>
+</head>
+<body>
+    <main>
+        <div id="a" onclick="Clicar()" onmouseenter="Entrar1()" onmouseout="Sair1()">a</div>
+        <div id="b" onclick="Clicar()" onmouseenter="Entrar2()" onmouseout="Sair2()">b</div>
+        <div id="c" onclick="Clicar()" onmouseenter="Entrar3()" onmouseout="Sair3()">c</div>
+        
+        <div id="d" onclick="Clicar()" onmouseenter="Entrar4()" onmouseout="Sair4()">d</div>
+        <div id="e" onclick="Clicar()" onmouseenter="Entrar5()" onmouseout="Sair5()">e</div>
+        <div id="f" onclick="Clicar()" onmouseenter="Entrar6()" onmouseout="Sair6()">f</div>
+    
+    </main>
+    
+    <script>
+        let a = window.document.getElementById('a')
+        let b = window.document.getElementById('b')
+        let c = window.document.getElementById('c')
+        let d = window.document.getElementById('d')
+        let e = window.document.getElementById('e')
+        let f = window.document.getElementById('f')
+      
+                      
+        function Clicar(){
+            a.innerText='clicou!'
+            b.innerText='clicou!'
+            c.innerText='clicou!'
+            d.innerText='clicou!'
+            e.innerText='clicou!'
+            f.innerText='clicou!'
+        
+        }
+
+        function Entrar1(){
+            a.style.background="gray"   
+            a.style.color="white"    
+
+        }
+        function Entrar2(){
+            b.style.background="gray"
+            b.style.color="white" 
+        }
+        function Entrar3(){
+            c.style.background="gray"  
+            c.style.color="white"      
+
+        }
+        function Entrar4(){
+            d.style.background="gray"    
+            d.style.color="white"    
+
+        }
+        function Entrar5(){
+            e.style.background="gray"   
+            e.style.color="white"     
+
+        }
+        function Entrar6(){
+            f.style.background="gray"   
+            f.style.color="white"     
+
+        }
+
+        function Sair1(){
+            a.style.background="white"
+            a.style.color="black" 
+        }
+        function Sair2(){
+            b.style.background="white"
+            b.style.color="black" 
+        }
+        function Sair3(){
+            c.style.background="white"
+            c.style.color="black" 
+        }
+        function Sair4(){
+            d.style.background="white"
+            d.style.color="black" 
+        }
+        function Sair5(){
+            e.style.background="white"
+            e.style.color="black" 
+        }
+        function Sair6(){
+            f.style.background="white"
+            f.style.color="black" 
+        }
+        
+
+
+
+       
+        
+        
+
+
+
+    
+       
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
