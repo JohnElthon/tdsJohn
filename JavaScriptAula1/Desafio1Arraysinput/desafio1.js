@@ -16,7 +16,7 @@ function dados_organizadados() {
     }
  
     // Adiciona os numeros digitados
-    num_digitados.innerText = dados.join("  ,  ");
+    num_dig.innerText = dados.join("  ,  ");
  
     // Adiciona o número 10 no final do array
     dados.push(10);
@@ -25,7 +25,7 @@ function dados_organizadados() {
     dados.sort((a, b) => a - b); // decresente: b - a
  
     // Mostrar informações no html
-    num_quantidade.innerText = "Você digitou " + quantidade + " números";
+    num_quant.innerText = "Você digitou " + quantidade + " números";
     num_ordenado.innerText = dados.join("  ,  ");
     index_10.innerText = dados.indexOf(10);
  
