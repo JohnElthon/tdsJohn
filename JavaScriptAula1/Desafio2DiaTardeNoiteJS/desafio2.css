@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:beige
+}
+header{
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+   
+}
+div{
+    padding: 10px;
+    color: black;   
+    text-align: center;
+}
+#imagem{
+    height: 300px;
+    width: 300px;
+    border-radius: 20%;
+}
