@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exfinal.css">
+    <script src="exfinal.js" type="text/JavaScript" defer></script>
+    <title>Exerciciio Final JavaScript</title>
+</head>
+<body>
+<header>
+    <h1>Calculo valor dos Combustiveis</h1>
+</header>
+
+<main>
+    <div id="valorGas">
+        <h2>Digite o Valor do Combustivel</h2>
+        <input type="text" name="Valor" id="ValorRef.">
+    </div>
+    <input type="radio" name="Combustivel" id="Gasolina" value="Combustiveis">
+    <label for="Gasolina">Gasolina</label>
+
+    <input type="radio" name="Combustivel" id="Etanol" value="Combustiveis">
+    <label for="Gasolina">Etanol</label><br>
+
+    <label for="Porcentagem">Selecione a Porcentagem:</label>
+    <select name="Porcentagem" id="Porcentagem">
+        <option value="" disabled selected></option>
+        <option value="0,65">65%</option>
+        <option value="0,66">66%</option>
+        <option value="0,67">67%</option>
+        <option value="0,68">68%</option>
+        <option value="0,69">69%</option>
+        <option value="0,70">70%</option>
+        <option value="0,71">71%</option>
+        <option value="0,72">72%</option>
+        <option value="0,70">73%</option>
+        <option value="0,74">74%</option>
+        <option value="0,75">75%</option>
+        
+   </select>
+
+<section>
+    <input type="button" value="Calcular" id="Calcular" onclick="Calcular()">
+    <p id="resultado"></p>
+</section>
+   
+    
+
+    
+
+
+
+
+
+</main>
+
+
+
+    
+</body>
+</html>
