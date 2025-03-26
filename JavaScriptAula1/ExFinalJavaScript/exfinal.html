@@ -15,40 +15,41 @@
 <main>
     <div id="valorGas">
         <h2>Digite o Valor do Combustivel</h2>
-        <input type="text" name="Valor" id="ValorRef.">
-    </div>
-    <input type="radio" name="Combustivel" id="Gasolina" value="Combustiveis">
-    <label for="Gasolina">Gasolina</label>
+        <input type="text" name="valor" id="preco">
 
-    <input type="radio" name="Combustivel" id="Etanol" value="Combustiveis">
-    <label for="Gasolina">Etanol</label><br>
-
+        <div class="radio">
+            <input type="radio" id="gasolina" name="combustivel" value="combustiveis">
+        <label for="gasolina">Gasolina</label>
+        <input type="radio" id="etanol" name="combustivel" value="combustiveis">
+        <label for="etanol">Etanol</label> <br>
+ 
+        </div>
     <label for="Porcentagem">Selecione a Porcentagem:</label>
-    <select name="Porcentagem" id="Porcentagem">
+    <select name="Escolha" id="select">
         <option value="" disabled selected></option>
-        <option value="0,65">65%</option>
-        <option value="0,66">66%</option>
-        <option value="0,67">67%</option>
-        <option value="0,68">68%</option>
-        <option value="0,69">69%</option>
-        <option value="0,70">70%</option>
-        <option value="0,71">71%</option>
-        <option value="0,72">72%</option>
-        <option value="0,70">73%</option>
-        <option value="0,74">74%</option>
-        <option value="0,75">75%</option>
+        <option value="0.65">65%</option>
+        <option value="0.66">66%</option>
+        <option value="0.67">67%</option>
+        <option value="0.68">68%</option>
+        <option value="0.69">69%</option>
+        <option value="0.70">70%</option>
+        <option value="0.71">71%</option>
+        <option value="0.72">72%</option>
+        <option value="0.70">73%</option>
+        <option value="0.74">74%</option>
+        <option value="0.75">75%</option>
         
         
    </select>
 
-<section>
-    <input type="button" value="Calcular" id="Calcular" onclick="Calcular()">
+
+    <button id ="button"onclick="calcular()">Calcular</button>
     <p id="resultado"></p>
-</section>
+
    
     
+ 
 
-    
 
 
 
