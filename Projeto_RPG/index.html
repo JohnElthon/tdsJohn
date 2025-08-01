@@ -2,67 +2,67 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Escolha seu personagem - Dragon Ball</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto Dragon Ball RPG</title>
+  <link rel="stylesheet" href="estilo.css" />
+  
 </head>
 <body>
-  <header>
-    <h1>Escolha seu Personagem do Dragon Ball</h1>
+  <header class="cabecalho">
+    <div class="conteudo-cabecalho">
+      <img src="img/dblogo.jpg" alt="Logo Dragon Ball" class="logo" />
+      <h1 class="titulo-site">Dragon Ball RPG</h1>
+    </div>
   </header>
 
-  <main class="personagem-lista">
-    <form action="personagem.php" method="POST" id="formPersonagem">
-      <div class="cardContainer">
+  <main class="fundo-dragonball">
 
-        <label class="personagem-card" for="goku">
-          <input type="radio" name="personagem" id="goku" value="Goku" />
-          <img src="imagens/goku.jpg" alt="" />
-          <span>Goku</span>
-        </label>
+        <section class="descricao">
+      <p>Bem-vindo ao universo de Dragon Ball RPG! Escolha um personagem e prepare-se para batalhas épicas.</p>
+    </section>
 
-        <label class="personagem-card" for="vegeta">
-          <input type="radio" name="personagem" id="vegeta" value="Vegeta" />
-          <img src="imagens/vegeta.jpg" alt="" />
-          <span>Vegeta</span>
-        </label>
+    <div class="container-formulario">
+      <h1 class="titulo-formulario">Escolha seu Personagem Dragon Ball</h1>
+      <form action="personagem.php" method="GET" class="formulario-personagem">
+        <label for="nome" class="rotulo">Digite seu nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          class="campo-texto"
+          required
+        />
 
-        <label class="personagem-card" for="gohan">
-          <input type="radio" name="personagem" id="gohan" value="Gohan" />
-          <img src="imagens/gohan.jpg" alt="" />
-          <span>Gohan</span>
-        </label>
+        <label for="personagem" class="rotulo">Escolha o personagem:</label>
+        <select  name="personagem" id="personagem" class="campo-select" required >
+            <option value="" disabled selected></option>
+          <optgroup label="Heróis">
+            <option value="Goku">Goku</option>
+            <option value="Vegeta">Vegeta</option>
+            <option value="Gohan">Gohan</option>
+            <option value="Trunks do Futuro">Trunks do Futuro</option>
+            <option value="Piccolo">Piccolo</option>
+            <option value="Goten">Goten</option>
+            <option value="Kuririn">Kuririn</option>
+            <option value="Mestre Kame">Mestre Kame</option>
+          </optgroup>
+          <optgroup label="Vilões">
+            <option value="Freeza">Freeza</option>
+            <option value="Cell">Cell</option>
+            <option value="Majin Boo">Majin Boo</option>
+            <option value="Broly">Broly</option>
+            <option value="Zamasu">Zamasu</option>
+            <option value="Jiren">Jiren</option>
+            <option value="Beerus">Beerus</option>
+          </optgroup>
+        </select>
 
-        <label class="personagem-card" for="trunks">
-          <input type="radio" name="personagem" id="trunks" value="truns" />
-          <img src="imagens/trunks.jpg" alt="" />
-          <span>Trunks</span>
-        </label>
+        <button type="submit" class="botao-enviar">Escolher Personagem</button>
+      </form>
+    </div>
+  </main>
 
-        <label class="personagem-card" for="piccolo">
-          <input type="radio" name="personagem" id="piccolo" value="piccolo" />
-          <img src="imagens/piccolo.jpg" alt="" />
-          <span>Piccolo</span>
-        </label>
 
-         <label class="personagem-card" for="goten">
-          <input type="radio" name="personagem" id="goten" value="goten" />
-          <img src="imagens/goten.jpg" alt="" />
-          <span>Goten</span>
-        </label>
 
-         <label class="personagem-card" for="kuririn">
-          <input type="radio" name="personagem" id="kuririn" value="kuririn" />
-          <img src="imagens/kuririn.jpg" alt="" />
-          <span>Kuririn</span>
-        </label>
-
-         <label class="personagem-card" for="kame">
-          <input type="radio" name="personagem" id="kame" value="kame" />
-          <img src="imagens/mestrekame.jpg  " alt="" />
-          <span>Mestre Kame</span>
-        </label>
-
-       
-
-        
-
+</body>
+</html>
