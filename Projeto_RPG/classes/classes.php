@@ -3,18 +3,10 @@
 abstract class Personagem {
     public $forca, $defesa, $esquiva, $velocidade, $inteligencia, $vida, $tipo, $classe, $img, $descricao;
 
-    public function ataqueComum() {
-        echo 'Ataque comum básico <br>';
-    }
-    public function defender() {
-        echo 'Defendendo ataque <br>';
-    }
-    public function esquivar() {
-        echo 'Esquivando do ataque <br>';
-    }
-    public function fugir() {
-        echo 'Fugindo da batalha <br>';
-    }
+     public function ataqueComum(){echo('Ataque Comum (60) <br>');}
+        public function defender(){echo('Defender (40) <br>');}
+        public function esquivar(){echo('Esquivar (55) <br>');}
+        public function fugir(){echo('Fugir (-25) <br>');}
 
     public function __set($atributo, $valor) {
         $this->$atributo = $valor;
@@ -23,7 +15,6 @@ abstract class Personagem {
         return $this->$atributo;
     }
 
-    abstract public function ataqueEspecial();
 }
 
 // Heróis
@@ -75,14 +66,14 @@ class Gohan extends Personagem {
     }
 }
 
-class TrunksDoFuturo extends Personagem {
+class Trunks_Do_Futuro extends Personagem {
     public $forca = 110;
     public $defesa = 95;
     public $esquiva = 105;
     public $velocidade = 110;
     public $inteligencia = 85;
     public $vida = 135;
-    public $img = 'trunksdofuturo.jpg';
+    public $img = 'trunks.jpg';
     public $descricao = 'Um guerreiro do futuro com grande habilidade em combate e espada poderosa.';
 
     public function ataqueEspecial() {
@@ -139,7 +130,7 @@ class Kuririn extends Personagem {
     }
 }
 
-class MestreKame extends Personagem {
+class Mestre_Kame extends Personagem {
     public $forca = 50;
     public $defesa = 70;
     public $esquiva = 85;

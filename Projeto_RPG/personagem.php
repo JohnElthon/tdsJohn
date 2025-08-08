@@ -2,7 +2,7 @@
 require 'classes/classes.php';
 
 $nome = $_GET['nome'];
-$classe = $_GET['personagem'];
+$classe = str_replace(' ', '_', $_GET['personagem']);
 
 
 
@@ -29,19 +29,19 @@ $personagem = new $classe();
       <h1><?php echo $classe; ?></h1>
 
 
-     <img src="img/<?php echo ($personagem->img); ?>" alt="<?php echo ($classe); ?>">
-<p><?php echo ($personagem->descricao); ?></p>
+     <img src="img/<?php echo "{$personagem->__get('img')}"; ?>" alt="<?php echo $classe; ?>">
+<p><?php echo "{$personagem->__get('descricao')}"; ?></p>
 
 
       <hr>
 
       <div class="atributos">
-        <div><strong>Força</strong><p><?= $personagem->forca ?></p></div>
-        <div><strong>Defesa</strong><p><?= $personagem->defesa ?></p></div>
-        <div><strong>Esquiva</strong><p><?= $personagem->esquiva ?></p></div>
-        <div><strong>Velocidade</strong><p><?= $personagem->velocidade ?></p></div>
-        <div><strong>Inteligência</strong><p><?= $personagem->inteligencia ?></p></div>
-        <div><strong>Vida</strong><p><?= $personagem->vida ?></p></div>
+        <div><strong>Força</strong><p><?php echo "{$personagem->__get('forca')}" ?></p></div>
+        <div><strong>Defesa</strong><p><?php echo "{$personagem->__get('defesa')}" ?></p></div>
+        <div><strong>Esquiva</strong><p><?php echo "{$personagem->__get('esquiva')}" ?></p></div>
+        <div><strong>Velocidade</strong><p><?php echo "{$personagem->__get('velocidade')}" ?></p></div>
+        <div><strong>Inteligência</strong><p><?php echo "{$personagem->__get('inteligencia')}" ?></p></div>
+        <div><strong>Vida</strong><p><?php echo "{$personagem->__get('vida')}" ?></p></div>
       </div>
 
       <hr>
@@ -49,10 +49,10 @@ $personagem = new $classe();
       <div class="acoes">
         <div>
           <strong>Ações Básicas</strong>
-          <p><?= $personagem->ataqueComum(); ?></p>
-          <p><?= $personagem->defender(); ?></p>
-          <p><?= $personagem->esquivar(); ?></p>
-          <p><?= $personagem->fugir(); ?></p>
+          <p><?php $personagem->ataqueComum(); ?></p>
+          <p><?php $personagem->defender(); ?></p>
+          <p><?php $personagem->esquivar(); ?></p>
+          <p><?php $personagem->fugir(); ?></p>
         </div>
       </div>
 
@@ -61,7 +61,7 @@ $personagem = new $classe();
       <div class="especiais">
         <div>
           <strong>Ataques Especiais</strong>
-          <p><?= $personagem->ataqueEspecial(); ?></p>
+          <p><?php $personagem->ataqueEspecial(); ?></p>
         </div>
       </div>
     </div>

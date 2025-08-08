@@ -42,57 +42,62 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 20px;
-  background: url('img/dragonball-bg.jpg') no-repeat center center/cover;
+  padding: 20px 10px;
+ 
 }
 
 .container-personagem {
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: 15px;
+  height: 100%;
+  
+  overflow-y: auto;
   max-width: 720px;
   width: 100%;
-  padding: 30px;
+  padding: 10px;
   box-shadow: 0 0 25px #ff9900;
   text-align: center;
+   
+  
 }
 
 .container-personagem h2 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #ffcc00;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   text-shadow: 0 0 5px #ffcc00;
 }
 
 .container-personagem h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
   color: #ff9900;
   text-shadow: 0 0 8px #ff9900;
 }
 
 .container-personagem img {
-  max-width: 280px;
+  max-width: 150px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 20px #ff9900;
-  margin-bottom: 25px;
+  margin-bottom: 8px;
 }
 
 .container-personagem p {
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   color: #ddd;
-  padding: 0 10px;
+  
 }
 
 hr {
   border: none;
   height: 2px;
   background-color: #ff9900;
-  margin: 30px 0;
+  margin: 20px;
   border-radius: 2px;
   box-shadow: 0 0 8px #ff9900;
 }
@@ -101,17 +106,16 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
+  gap: 10px;
   margin-top: 10px;
 }
 
 .atributos div, .acoes div, .especiais div {
   background-color: #222;
-  padding: 15px 20px;
+  padding: 10px 15px;
   border-radius: 12px;
-  flex: 1 1 280px;
   box-shadow: 0 0 12px #ffcc00;
-  min-width: 280px;
+  width: 28%;
   color: #fff8e1;
 }
 
@@ -130,6 +134,7 @@ hr {
   color: #ffd966;
   text-shadow: 0 0 3px #ffa500;
 }
+
 
 @media (max-width: 720px) {
   .container-personagem {
