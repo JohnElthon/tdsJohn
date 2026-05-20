@@ -25,7 +25,6 @@ header{
     align-items: center;
   
 }
-
 .logo img{
     width: 200px;
     height: 200px;
@@ -45,7 +44,6 @@ nav{
     text-align:center;
     width: 120%;
     padding: 15px;
-
 }
 .seçaoEntrada{
     background-image:url("./imagens/salao\ restaurante.png");
@@ -122,35 +120,43 @@ button:hover{
 .cards2 img{
     width: 100%;
 }
-
 .cards1:hover{
     
 }
-
 .secaofinal{
-   
     margin-top: 30px;  
-    
     display: flex;
     flex-flow: row wrap;  
     color: #ffffff;
     background-color:rgb(233,77,77);
-    
-    text-align:right;
-    
-    
+    text-align: center;
+    padding: 20px;
 }
-.secaofinal img{
+.secaofinal h3{
     width: 100%;
-    
+    margin-bottom: 10px;
+}
+.secaofinal > p{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.containerChefs{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 .chefs{
     margin: 10px;
     max-width: 300px;
-    
-
 }
-
+.chefs img{
+    width: 100%;
+}
+.chefs p{
+    margin-top: 10px;
+}
+ 
 
 
 
